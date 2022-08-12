@@ -4,7 +4,7 @@ const db= require('./db/db.json');
 const fs=require ('fs');
 const { v4: uuidv4 } = require('uuid');
 const app=express();
-const PORT= process.env.PORT || 3000;
+const PORT= process.env.PORT || 3030;
 app.use(express.static('public'));
 
 //Middleware for Parsign JSON and urlencoded
@@ -21,25 +21,27 @@ app.get('/notes', (req,res) => {
     res.sendFile(path.join(__dirname,'./public/notes.html'))
 }
 )
-
+app.delete(`/api/notes/:id`, (req, res) => {
+    console.log("DELETE Request Called for /api endpoint")
+    res.send("DELETE Request called");
+    const deleteID=db.findIndex(note => note.id === req.params.id);
+    db.splice(deleteID,1);
+    fs.writeFileSync("./db/db.json", JSON.stringify(db), (err) =>{
+        if (err) throw err
+    })
+ })
 
 app.post('/api/notes', (req, res) => {
     console.log('hitting api/notes route POST request')
 
-    let addNote = req.body;
-    addNote.id = uuidv4();
+    let newNote = req.body;
+    newNote.id = uuidv4();
     db.push(newNote)
     fs.writeFileSync('./db/db.json', JSON.stringify(db), (err) => {
         if (err) throw err;
     });
     res.send(db);
 })
-
-app.delete(`/api/notes/:id`, (req, res) => {
-    console.log("DELETE Request Called for /api endpoint")
-    res.send("DELETE Request called")
- })
-
 
 app.get('*',(req,res)=>{
     console.log('notes * GET request file');
