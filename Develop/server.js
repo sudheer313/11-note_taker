@@ -37,7 +37,7 @@ app.post('/api/notes', (req, res) => {
 
 app.delete(`/api/notes/:id`, (req, res) => {
     console.log("DELETE Request Called for /api endpoint")
-    res.send("DELETE Request Called")
+    res.send("DELETE Request called")
  })
 
 
