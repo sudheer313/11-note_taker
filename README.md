@@ -65,9 +65,9 @@ The following API routes should be created:
 
 #Deployment
 [Github repo] sudheer313/11-note_taker<br>
-[Github URL here] https://github.com/sudheer313/10-team-profile-generator<br>
-[Live webpage URL git hub](https://sudheer313.github.io/10-team-profile-generator/)<br>
-[Live webpage URL Heroku](https://sudheer313.github.io/10-team-profile-generator/)<br>
+[Github URL here] hhttps://github.com/sudheer313/11-note_taker<br>
+[Live webpage URL git hub](https://sudheer313.github.io/11-note_taker/)<br>
+[Live webpage URL Heroku](https://git.heroku.com/notetakerrru.git)<br>
 
 ## Built with
 
