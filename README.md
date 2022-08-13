@@ -67,7 +67,7 @@ The following API routes should be created:
 [Github repo] sudheer313/11-note_taker<br>
 [Github URL here] hhttps://github.com/sudheer313/11-note_taker<br>
 [Live webpage URL git hub](https://sudheer313.github.io/11-note_taker/)<br>
-[Live webpage URL Heroku](https://git.heroku.com/notetakerrru.git)<br>
+[Live webpage URL Heroku App](https://notetakerrru.herokuapp.com/)<br>
 
 ## Requirements  
 
