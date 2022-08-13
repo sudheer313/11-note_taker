@@ -69,15 +69,17 @@ The following API routes should be created:
 [Live webpage URL git hub](https://sudheer313.github.io/11-note_taker/)<br>
 [Live webpage URL Heroku](https://git.heroku.com/notetakerrru.git)<br>
 
-## Built with
+## Requirements  
 
 - node js
 - Express.js
-## Installation
+## Package Installation
 
 - NPM Install
 - nodemon (not mandatory)
 - uuidv install
+## Starting the APP
+- npm start
 ## Features
 It lets user to add and notes and save notes. It also allows user to delete entered notes. It is also deloyed in heroku.
 
@@ -87,7 +89,7 @@ It lets user to add and notes and save notes. It also allows user to delete ente
 3. referred https://github.com/ashachakre0906/note-taker
 4. https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app
 
-## What we learned
+## What I learned
 
 This is a basic application to learn Express.js. I learned to create ExpressJS app connection to backend and also creating a local Host. Through Insomnia I learned to understnad GET and POST commands using this application. I also learned to create a delete ruest using few referrences.
 
