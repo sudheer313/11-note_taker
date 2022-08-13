@@ -39,17 +39,17 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 The following images show the web application's appearance and functionality:
 
-![dvsd](./Assets/11-express-homework-note1.png)
+![GET Request](./Assets/note1.png)
 
-![sdfvs](./Assets/11-express-homework-note2.png)
+![Post request and Get Request](./Assets/note2.png)
 
-![dv s](./Assets/11-express-homework-note3.png)
+![delete request](./Assets/note3.png)
 
 ## Getting Started
 
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
+On the back end, the application includes a `db.json` file that will be used to store and retrieve notes using the `fs` module.
 
-The following HTML routes should be created:
+The following HTML routes are created:
 
 * `GET /notes` should return the `notes.html` file.
 
@@ -57,85 +57,54 @@ The following HTML routes should be created:
 
 The following API routes should be created:
 
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
+* `GET /api/notes` will read the `db.json` file and return all saved notes as JSON in JSON file(DB)
 
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+* `POST /api/notes` will receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. 
 
+`DELETE /api/notes/:id` will receive a query parameter that contains the id of a note to delete. To delete a note, I need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
 
-## Bonus
+#Deployment
+[Github repo] sudheer313/11-note_taker<br>
+[Github URL here] https://github.com/sudheer313/10-team-profile-generator<br>
+[Live webpage URL git hub](https://sudheer313.github.io/10-team-profile-generator/)<br>
+[Live webpage URL Heroku](https://sudheer313.github.io/10-team-profile-generator/)<br>
 
-You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
+## Built with
 
-* `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+- node js
+- Express.js
+## Installation
 
+- NPM Install
+- nodemon (not mandatory)
+- uuidv install
+## Features
+It lets user to add and notes and save notes. It also allows user to delete entered notes. It is also deloyed in heroku.
 
-## Grading Requirements
+## Credits
+1. ASK BCS
+2. referred https://github.com/jessamyn27/Notetaker-with-Express
+3. referred https://github.com/ashachakre0906/note-taker
+4. https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+## What we learned
 
-This Challenge is graded based on the following criteria: 
+This is a basic application to learn Express.js. I learned to create ExpressJS app connection to backend and also creating a local Host. Through Insomnia I learned to understnad GET and POST commands using this application. I also learned to create a delete ruest using few referrences.
 
+## Challenges
+At start it was hard for me to understand how to connect my back end to front end . I also had troule understandig GET and POST requests. MOst importantly I learned how to connect my JSON file to execute GET and POST commands. I had few issues wit Heroku.  After practicing class Activities and asking ASK BCS helped me to ovecome this challanges.I also thank jessamyn27 and ashachakre0906.
+I am also thankful and proud of myself for not giving up and keep trying untill I managed to learn this.
 
-### Technical Acceptance Criteria: 40%
+## Author
 
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Application front end must connect to an Express.js back end.
-
-  * Application back end must store notes that have a unique id in a JSON file.
-
-  * Application must be deployed to Heroku.
-
-
-### Deployment: 36%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
+@Sudheer kandula
 
 
-### Application Quality: 11%
-
-* Application console is free of errors.
 
 
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
 
 
-### Bonus: +10 Points
-
-* Application allows users to delete notes.
 
 
-## Review
 
-You are required to submit BOTH of the following for review:
 
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
