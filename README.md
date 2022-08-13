@@ -2,9 +2,9 @@
 
 ## Your Task
 
-Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
+This application is used to write and save note. This application use Express.js use as back end and also it retrives data from JSON file(db file). Using GET POST and DELETE request we can post data through Insomnia and also can retrive data through this.
 
-The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
+The entire application is deployed in HEROKU.
 
 
 ## User Story
@@ -39,10 +39,11 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 The following images show the web application's appearance and functionality:
 
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
+![dvsd](./Assets/11-express-homework-note1.png)
 
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Assets/11-express-homework-demo-02.png)
+![sdfvs](./Assets/11-express-homework-note2.png)
 
+![dv s](./Assets/11-express-homework-note3.png)
 
 ## Getting Started
 

@@ -54,3 +54,7 @@ app.get('*',(req,res)=>{
 app.listen(PORT, () => {
     console.log(`Listening at port: http://localhost:${PORT}`)
 })
+
+// referred https://github.com/jessamyn27/Notetaker-with-Express
+// referred https://github.com/ashachakre0906/note-taker
+// https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app
